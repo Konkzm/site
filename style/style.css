@@ -1,0 +1,72 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 100%; /*16px*/
+    height: 100vh;
+    width: 100vw;
+}
+#page1{
+    background-color: aquamarine;
+}
+#page2{
+    background-color: brown;
+}
+#page3{
+    background-color: burlywood;
+}
+
+#interface{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+
+    
+}
+
+section{
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Telas grandes, como tv*/
+@media (min-width:1201px){
+    #page1 h1{
+        color:brown;
+    }
+}
+
+/*Desktops, telas grandes*/
+@media (max-width:1200px){
+    #page1 h1{
+        color: blue;
+    }
+}
+
+/*Laptops*/
+@media (max-width:1024px){
+    #page1 h1{
+        color: chartreuse;
+    }
+}
+
+/*Ipads, Tablets*/
+@media (max-width:768px), (orientation:landscape){
+    #page1 h1{
+        color: purple;
+    }
+}
+
+@media (min-width:328px) and (max-width:480px){
+    #page1 h1{
+        color: cadetblue;
+    }
+}
